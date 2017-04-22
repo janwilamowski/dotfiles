@@ -14,8 +14,9 @@
 [merge]
 	tool = meld
 [core]
-	pager = less -+X -+F
+	pager = less -+X -+F -x4
 	whitespace = fix,cr-at-eol
+	autocrlf = false
 [push]
 	default = upstream
 [color "status"]

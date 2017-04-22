@@ -118,6 +118,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias cp='cp -n'
 alias phpunit='php /home/jan/dev/mws/vendor/phpunit/phpunit/phpunit.php'
+alias dup='docker-compose up --build'
 
 export VISUAL=/usr/bin/vi
 export EDITOR=/usr/bin/vi
@@ -126,9 +127,13 @@ export LIQUIBASE_HOME=/home/jan/software/liquibase
 export CATALINA_HOME=/home/jan/software/apache-tomcat-7.0.59
 export PATH=$PATH:$JAVA_HOME/bin:$LIQUIBASE_HOME:$CATALINA_HOME/bin:~/.local/bin
 export XDEBUG_CONFIG="idekey=netbeans-xdebug";
+export LESS=-Ri
 
 [ -r /home/jan/software/grails_autocomplete ] && source /home/jan/software/grails_autocomplete
 [ -r /home/jan/software/git-completion.bash ] && source /home/jan/software/git-completion.bash
+
+export NVM_DIR="/home/jan/.nvm"
+alias load-nvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'  # This loads nvm
 
 grepphp() {
   find . -name "*.php" -exec grep -n -l -e "$1" {} \;
