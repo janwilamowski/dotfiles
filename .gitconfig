@@ -1,0 +1,23 @@
+[user]
+	name = janwilamowski
+	email = wilamowski.jan@gmail.com
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	dt = difftool
+	mt = mergetool -t meld
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
+[core]
+	pager = less -+X -+F
+	whitespace = fix,cr-at-eol
+[push]
+	default = upstream
+[color "status"]
+	changed = cyan
+	untracked = dim
