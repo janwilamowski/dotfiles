@@ -147,3 +147,6 @@ phpgrep() {
 
 #export NVM_DIR="/home/jan/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PYTHONSTARTUP="$HOME/.pythonrc"
+
